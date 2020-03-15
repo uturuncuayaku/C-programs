@@ -1,0 +1,20 @@
+Binary Heap Data Structures
+-array object
+-binary tree representation
+-filled completely
+-except, the lowest on occasion
+-which is filled from left up to a point
+
+Can implement things like priority queues and background jobs
+Efficient storing, "heapsort"
+Is a sorting algo that is based upon a binary heap data structure.
+It involves finding the largest(max) elem and sorting it at the end
+of an unsorted collection.
+
+Binary Heap 
+Insert - O(log n)
+Delete - O(log n) 
+Decrease key - O(log n)
+Merge - O(n)
+Extract min- theta (log n)
+
