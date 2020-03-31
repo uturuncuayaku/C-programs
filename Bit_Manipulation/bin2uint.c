@@ -89,3 +89,28 @@ int get_bit(unsigned long int n, unsigned int index)
 	return ((n >> index) & 1);
 
 }
+int set_bit(unsigned long int *n, unsigned int index)
+{
+	*n |= 1 << index;
+		return 1;
+}
+int clear_bit(unsigned long int *n, unsigned int index)
+{
+	*n &= ~(1 << index);
+		return 1;
+}
+unsigned int flip_bits(unsigned long in n, unsigned long int m)
+{
+	unsigned long int iterate = 0;
+	unsigned long in new_bin = n ^ m;
+	while(new_bin)
+	{
+		iterate += (new_bin & 1);
+		new_bin >>= 1;
+	}
+	return iterate;
+}
+int get_end(void)
+{
+	return ( 0 | 1 );
+}
